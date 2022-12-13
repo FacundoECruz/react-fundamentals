@@ -7,10 +7,10 @@
   <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
 
   <script type="text/babel">
-    const classVar = 'container'
-    const msg = 'Hello World'
-
-    const element = <div className={classVar}>{msg}</div>
+    const children = 'Hello World'
+    const className = 'container'
+    const props = {children, className}
+    const element = <div className={props.className}>{props.children}</div>
 
     ReactDOM.createRoot(document.getElementById('root')).render(element)
   </script>
