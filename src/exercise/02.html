@@ -3,18 +3,20 @@
 
 <body>
   <div id="root"></div>
-
-  <!-- 🐨 add React and ReactDOM on the page.
-       💰 Here are script tags that'll do the job:
-  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
-  -->
-
-  <script type="module">
+ 
+ <script type="module">
     const rootElement = document.getElementById('root')
-    const element = React.createElement('div', {className: 'container', children: 'Hello world!'})
-    ReactDOM.render(element, rootElement)
+    // const element = React.createElement('div', {className: 'container', children: 'Hello world!'})
+    // ReactDOM.render(element, rootElement)
+    const helloElement = React.createElement('span', {children: 'Hello'})
+    const worldElement = React.createElement('span', {children: 'World'})
+    const element = React.createElement('div', 
+    {className: 'container'}, 
+    helloElement, 
+    ' ', 
+    worldElement)
 
+    ReactDOM.render(element, rootElement)
   </script>
 
   <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
