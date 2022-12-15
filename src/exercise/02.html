@@ -8,8 +8,9 @@
     const rootElement = document.getElementById('root')
     // const element = React.createElement('div', {className: 'container', children: 'Hello world!'})
     // ReactDOM.render(element, rootElement)
-    const helloElement = React.createElement('span', {children: 'Hello'})
-    const worldElement = React.createElement('span', {children: 'World'})
+    const helloElement = React.createElement('span', {children: 'Hello', className: 'words'})
+    const worldElement = React.createElement('span', {children: 'World', className: 'words'})
+    // const middleWord = React.createElement('span', {children: 'middleWord'})
     const element = React.createElement('div', 
     {className: 'container'}, 
     helloElement, 
