@@ -48,9 +48,9 @@ function UsernameForm({event, onSubmitUsername}) {
   )
 }
 
-function App() {
-  const onSubmitUsername = username => alert(`You entered: ${username}`)
-  return <UsernameForm onSubmitUsername={onSubmitUsername} />
-}
+// function App() {
+//   const onSubmitUsername = username => alert(`You entered: ${username}`)
+//   return <UsernameForm onSubmitUsername={onSubmitUsername} />
+// }
 
 export default App
